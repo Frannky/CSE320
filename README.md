@@ -1,41 +1,23 @@
-# Hang Zhao
-## 112524698
-:😏😏😏:
-Eugene Stark - CSE320
-ACADEMIC HONESTY STATEMENT
-================================================================================
-I certify the following:
+This course will introduce programming and essential concepts of operating systems, compilers, and concurrency, focused around several cross-cutting examples, such as memory management, error handling and threaded programming.
 
-1. All files hosted in this repository at any time, including any written
-material and code, are entirely of my own work. The only exception permitted to
-this rule is if the Professor(s) give explicit, written permission, in the
-assignment handout, on the webpage/PIAZZA, or in E-mail, to use or adapt other
-source code into my work. In this case, the origins of all such code is clearly
-cited in my files.
+HW1
+Serialization and Deserialization    09/2019
+•	Used C programming language to implement serialization and deserialization functions to provide a way to compress and decompress files and directories.
+•	Read the command line from the user in the shell to provide several functions such that for serialization, it reads the name, size, depth and contents of files and directories recursively from the path given by the user and zip them into a hexadecimal sequence of code which costs less storage on the disk and easy to be transmitted. For deserialization, given a sequence of hexadecimal code from the input, we can unzip the hexadecimal code and recursively reconstruct files and directory system which is exactly the same from the way zip them.
 
-2. I have not shared, transmitted, or received source code written for this
-class (including in any semester) from anyone else except the Professor(s) and
-the TAs. This includes both electronic forms (E-mail or downloading), as well as
-written or printed source code.
+HW3
+Dynamic Memory Allocator  10/2019
+•	A working replica of explicit free list memory allocator by using immediate coalescing adjacent free blocks and strategies that mimic best fit placement policy through first fit police.
+•	Supported boundary tags with footer and header at the same time and the footer will be removed within allocated blocks along with block splitting without creating splinters.
+•	Maintain a free double linked list using last in first out discipline.
 
-3. Except in the case of explicit written permission given by the Professor(s),
-I have not included in my repository any source code obtained from a textbook,
-downloaded from the Internet, extracted from a software package or source code
-library, or from any other similar source.
+HW4
+Job Spooler             11/2019
+•	Used C programming language to get requests from command line to execute, cancel orders from the user, pause and resume jobs using process, show the status of user request jobs and set up pipe between each pipeline to handle input and output among them and to interact between each jobs.
+•	Using fork, execution, signal handler to reap child process, pipes, multi-processing, input and output redirection.
 
-I understand that the appearance of extremely similar code fragments in more
-than one homework submission will be treated as evidence that code has been
-shared and an academic dishonesty case will be filed against me.
+HW5
+Bourse Exchange Server  12/2019
+•	Used C programming language to achieve multi-threads under one server process to respond user request.
+•	Implemented locks (POSIX threads), semaphores and multithreading in order to handle different trades at the same time between client and server without conflicts of deadlock and race condition.
 
-I understand that code fragments can be extremely similar even if they are
-formatted differently and use different identifiers/labels/variables. The
-appearance of extremely similar code fragments that differ in this way will be
-regarded as evidence of an attempt to conceal that sharing has taken place.
-
-When in doubt about whether or not I am permitted to use particular source
-materials, I will obtain written permission from the Professor(s), in advance of
-my submission. Such permission is best requested and obtained by E-mail to
-cse320@cs.stonybrook.edu
-================================================================================
-Signed:
-Wed Aug 28 13:06:26 UTC 2019 - Hang Zhao
